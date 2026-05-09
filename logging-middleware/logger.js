@@ -4,7 +4,7 @@ const DEFAULT_ENDPOINT =
   "http://4.224.186.213/evaluation-service/logs";
 
 function getEnv(key) {
-  // Works in Vite/modern bundlers, and safely no-ops in Node.
+
   try {
     return (
       (typeof import.meta !== "undefined" &&
@@ -43,7 +43,7 @@ export async function Log(stack, level, pkg, message) {
 
     return response.data;
   } catch (error) {
-    // Logging must never break the app; swallow failures.
+   
     return null;
   }
 }
