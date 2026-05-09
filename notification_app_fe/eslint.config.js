@@ -14,8 +14,7 @@ export default defineConfig([
       reactRefresh.configs.vite,
     ],
     rules: {
-      // Data fetching in effects is a common pattern for small apps.
-      // This rule is overly strict for this project.
+   
       'react-hooks/set-state-in-effect': 'off',
     },
     languageOptions: {
